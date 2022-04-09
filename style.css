@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-Blue);
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+
+#card {
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 15px;
+  padding: 1em 0.8em 4em 0.8em;
+  width: 88%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+#advice_number {
+  color: var(--Neon-Green);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#quote {
+  color: var(--Light-Cyan);
+}
+
+#dice {
+  background-color: var(--Neon-Green);
+  border-radius: 35px;
+  padding: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -25px;
+}
+
+.divider {
+  width: 100%;
+}
+
+.divider_desktop {
+  display: none;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .divider {
+    display: none;
+  }
+
+  .divider_desktop {
+    display: unset;
+  }
+}
